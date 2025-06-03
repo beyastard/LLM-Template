@@ -22,17 +22,20 @@ A ready-to-use template for setting up a Python development environment for LLM 
 Choose the appropriate setup script for your operating system:
 
 ### Windows
-```cmd
+```
+cmd
 setup.bat [KERNEL_NAME]
 ```
 
 ### Linux/macOS
-```chmod +x setup.sh
+```
+chmod +x setup.sh
 ./setup.sh [KERNEL_NAME]
 ```
 
 ### PowerShell (Cross-platform)
-```.\setup.ps1 -KernelName [KERNEL_NAME]
+```
+.\setup.ps1 -KernelName [KERNEL_NAME]
 ```
 
 Note: Replace [KERNEL_NAME] with your preferred Jupyter kernel name (default: "TinyLLM").
