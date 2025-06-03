@@ -30,6 +30,7 @@ echo call venv\Scripts\deactivate.bat >> d.bat
 echo "Writing requirements.txt..."
 echo transformers^>=4.52.4 > requirements.txt
 echo accelerate^>=0.26.0 >> requirements.txt
+echo bitsandbytes^>=0.42.0 >> requirements.txt
 echo datasets^>=2.16.0 >> requirements.txt
 echo dataclasses^>=0.6 >> requirements.txt
 echo ipykernel^>=6.0 >> requirements.txt

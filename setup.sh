@@ -38,6 +38,7 @@ echo "Writing requirements.txt..."
 cat > requirements.txt <<EOF
 transformers>=4.52.4
 accelerate>=0.26.0
+bitsandbytes>=0.42.0
 datasets>=2.16.0
 dataclasses>=0.6
 ipykernel>=6.0
