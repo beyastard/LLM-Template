@@ -14,7 +14,7 @@ mkdir .vscode data logs models notebooks src
 
 :: Create VSCode settings files (Windows)
 echo "Creating VSCode Windows settings..."
-echo { > ./.vscode/settingsx.json
+echo { > ./.vscode/settings.json
 echo   "python.pythonPath": ".\\venv\\Scripts\\python.exe", > ./.vscode/settings.json
 echo   "jupyter.executablePath": ".\\venv\\Scripts\\jupyter.exe" >> ./.vscode/settings.json
 echo } >> ./.vscode/settings.json
