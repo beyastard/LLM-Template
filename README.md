@@ -92,7 +92,7 @@ jupyter lab
 2. Change Jupyter kernel name:
     - Pass your preferred name as an argument to the setup script
 3. Modify VSCode settings:
--    Edit .vscode/settings.json
+    - Edit .vscode/settings.json
 
 ## Notes
 - The setup scripts assume you have Python added to your PATH.
