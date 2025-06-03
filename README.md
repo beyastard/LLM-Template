@@ -77,7 +77,8 @@ Training utilities (tqdm, tensorboard, datasets)
     - Linux/macOS: Run source a.sh or source venv/bin/activate
 
 2. Start Jupyter Lab:
-```jupyter lab
+```
+jupyter lab
 ```
 
 3. Deactivate the environment when done:
