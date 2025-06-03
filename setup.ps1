@@ -29,6 +29,7 @@ $settings = if ($IsWindows) {
 @"
 {
   "python.pythonPath": "./venv/bin/python",
+  "python.envFile": "\${workspaceFolder}/.env",
   "jupyter.executablePath": "./venv/bin/jupyter"
 }
 "@
