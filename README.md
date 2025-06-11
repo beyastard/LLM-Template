@@ -46,7 +46,7 @@ After setup, your project will have the following structure:
 project-root/
 │
 ├── .vscode/               # VSCode settings
-│   └── settings.json
+│      └── settings.json   # VSCode settings JSON file
 ├── data/                  # Dataset storage
 ├── logs/                  # Training logs
 ├── models/                # Model checkpoints
@@ -57,6 +57,7 @@ project-root/
 ├── d.bat/d.sh             # Quick deactivate script
 └── requirements.txt       # Project dependencies
 ```
+Note: Don't forget to change the ptoject-root (LLM-Template) to your project name.
 
 ## Included Packages
 The template installs the following key packages:

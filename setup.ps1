@@ -17,6 +17,13 @@ foreach ($dir in $dirs) {
     New-Item -ItemType Directory -Force -Path $dir | Out-Null
 }
 
+Write-Host "Creating placeholder files..."
+New-Item -ItemType File -Path "data/.data-files-go-here" -Force | Out-Null
+New-Item -ItemType File -Path "logs/.log-files-go-here" -Force | Out-Null
+New-Item -ItemType File -Path "models/.model-files-go-here" -Force | Out-Null
+New-Item -ItemType File -Path "notebooks/.jupyter-notebooks-go-here" -Force | Out-Null
+New-Item -ItemType File -Path "src/.source-files-go-here" -Force | Out-Null
+
 Write-Host "Creating VSCode settings..."
 $settings = if ($IsWindows) {
 @"

@@ -12,6 +12,14 @@ call venv\Scripts\activate.bat
 echo "Creating project directories..."
 mkdir .vscode data logs models notebooks src
 
+:: Create 'placeholder' files
+echo "Creating placeholder files..."
+echo;>data/.data-files-go-here
+echo;>logs/.log-files-go-here
+echo;>models/.model-files-go-here
+echo;>notebooks/.jupyter-notebooks-go-here
+echo;>src/.source-files-go-here
+
 :: Create VSCode settings files (Windows)
 echo "Creating VSCode Windows settings..."
 echo { > ./.vscode/settings.json

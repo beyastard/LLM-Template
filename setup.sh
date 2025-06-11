@@ -13,6 +13,14 @@ source venv/bin/activate
 echo "Creating project directories..."
 mkdir -p .vscode data logs models notebooks src
 
+# Create 'placeholder' files
+echo "Creating placeholder files..."
+echo;>data/.data-files-go-here
+echo;>logs/.log-files-go-here
+echo;>models/.model-files-go-here
+echo;>notebooks/.jupyter-notebooks-go-here
+echo;>src/.source-files-go-here
+
 # Create VSCode settings for Linux
 echo "Creating VSCode Linux settings..."
 cat > .vscode/settings.json <<EOF
