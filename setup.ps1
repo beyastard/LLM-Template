@@ -1,5 +1,6 @@
+# set default Kernel name (edit to change)
 param(
-    [string]$KernelName = "TinyLLM"
+    [string]$KernelName = "CustomLLM"
 )
 
 Write-Host "Creating virtual environment..."
@@ -66,12 +67,17 @@ scikit-learn>=1.3.0
 sentencepiece>=0.2.0
 "@ | Set-Content requirements.txt
 
-Write-Host "Installing packages..."
+Write-Host "Upgrading pip version..."
 python -m pip install --upgrade pip
+
+# change if you want a different version
+Write-Host "Installing PyTorch with CUDA 12.6... (this may take a while)"
 pip install torch -i https://download.pytorch.org/whl/cu126
+
+Write-Host "Installing other dependencies... (this may take a while longer!)"
 pip install -r requirements.txt
 
 Write-Host "Installing Jupyter kernel: $KernelName"
 python -m ipykernel install --user --name=$KernelName --display-name "Python ($KernelName)"
 
-Write-Host "✅ Setup complete!"
+Write-Host "✅ Virtual environment created and configured for regular/Jupyter projects!"

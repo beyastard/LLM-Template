@@ -61,15 +61,15 @@ echo "Upgrading pip..."
 python.exe -m pip install --upgrade pip
 
 :: Install PyTorch with CUDA 12.6 support
-echo "Installing PyTorch with CUDA 12.6..."
+echo "Installing PyTorch with CUDA 12.6... (this may take a while)"
 pip install torch -i https://download.pytorch.org/whl/cu126
 
 :: Install other dependencies
-echo "Installing other dependencies..."
+echo "Installing other dependencies... (this may take a while longer!)"
 pip install -r requirements.txt
 
 :: Install Jupyter kernel
 echo "Installing Jupyter kernel..."
 python -m ipykernel install --user --name=%KERNEL_NAME% --display-name "Python (%KERNEL_NAME%)"
 
-echo Virtual environment created and configured for Jupyter project on Windows.
+echo Virtual environment created and configured for regular/Jupyter projects on Windows.
