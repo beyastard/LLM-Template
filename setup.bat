@@ -54,6 +54,7 @@ echo packaging^>=21.3 >> requirements.txt
 echo numpy^>=1.23.0 >> requirements.txt
 echo pandas^>=1.5.0 >> requirements.txt
 echo scikit-learn^>=1.3.0 >> requirements.txt
+echo sentencepiece^>=0.2.0 >> requirements.txt
 
 :: Upgrade pip version
 echo "Upgrading pip..."
