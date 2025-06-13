@@ -63,6 +63,7 @@ numpy>=1.23.0
 pandas>=1.5.0
 scikit-learn>=1.3.0
 sentencepiece>=0.2.0
+peft>=0.15.2
 EOF
 
 # Upgrade pip
