@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: Python LLM Project Template
+message: >-
+  A ready-to-use template for LLM (Large Language Model) projects.
+  type: software
+authors:
+  - given-names: Bryan
+    family-names: Reinhart
+    email: bryankreinhart@gmail.com
+    affiliation: BeySoft/CDI
+    orcid: 'https://orcid.org/0009-0008-6997-2103'
+repository-code: 'https://github.com/beyastard/LLM-Template'
+abstract: >-
+  A ready-to-use template for setting up a Python development environment
+  for LLM (Large Language Model) projects. Includes scripts for Windows,
+  Linux, and PowerShell environments.
+license: MIT
+version: 0.1.0

@@ -16,7 +16,7 @@ A ready-to-use template for setting up a Python development environment for LLM 
 - Python 3.12
 - pip
 - Git (optional)
-- NVIDIA CUDA 12.6 (for GPU support - optional)
+- NVIDIA CUDA 12.8 (for GPU support - optional)
 
 ## Installation
 Choose the appropriate setup script for your operating system:
@@ -62,7 +62,7 @@ Note: Don't forget to change the ptoject-root (LLM-Template) to your project nam
 ## Included Packages
 The template installs the following key packages:
 
-PyTorch with CUDA 12.6 support
+PyTorch with CUDA 12.8 support
 
 Transformers (Hugging Face)
 
@@ -98,7 +98,7 @@ jupyter lab
 ## Notes
 - The setup scripts assume you have Python added to your PATH.
 - For GPU support, ensure you have compatible NVIDIA drivers and CUDA installed.
-- The template uses PyTorch with CUDA 12.6 by default. Modify the setup scripts if you need a different version.
+- The template uses PyTorch with CUDA 12.8 by default. Modify the setup scripts if you need a different version.
 
 ## License
 This template is provided under the MIT License. Feel free to modify and use it for your projects.
