@@ -46,8 +46,6 @@ echo jupyterlab^>=3.0 >> requirements.txt
 echo ipywidgets^>=7.0 >> requirements.txt
 echo matplotlib^>=3.5 >> requirements.txt
 echo tensorboard^>=2.13 >> requirements.txt
-echo torchvision^>=0.18.0 >> requirements.txt
-echo torchaudio^>=0.18.0 >> requirements.txt
 echo tqdm^>=4.64.0 >> requirements.txt
 echo filelock^>=3.12.0 >> requirements.txt
 echo packaging^>=21.3 >> requirements.txt
@@ -56,14 +54,17 @@ echo pandas^>=1.5.0 >> requirements.txt
 echo scikit-learn^>=1.3.0 >> requirements.txt
 echo sentencepiece^>=0.2.0 >> requirements.txt
 echo peft^>=0.15.2 >> requirements.txt
+echo cupy_cuda12x^>=13.4.1 >> requirements.txt
+echo onnxruntime-gpu^>=1.22.0 >> requirements.txt
+echo ctranslate2^>=4.6.0 >> requirements.txt
 
 :: Upgrade pip version
 echo "Upgrading pip..."
 python.exe -m pip install --upgrade pip
 
-:: Install PyTorch with CUDA 12.6 support
-echo "Installing PyTorch with CUDA 12.6... (this may take a while)"
-pip install torch -i https://download.pytorch.org/whl/cu126
+:: Install PyTorch with CUDA 12.8 support
+echo "Installing PyTorch with CUDA 12.8... (this may take a while)"
+pip install torch torchaudio torchvision -i https://download.pytorch.org/whl/cu128
 
 :: Install other dependencies
 echo "Installing other dependencies... (this may take a while longer!)"

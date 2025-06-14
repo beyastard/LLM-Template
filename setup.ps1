@@ -56,8 +56,6 @@ jupyterlab>=3.0
 ipywidgets>=7.0
 matplotlib>=3.5
 tensorboard>=2.13
-torchvision>=0.18.0
-torchaudio>=0.18.0
 tqdm>=4.64.0
 filelock>=3.12.0
 packaging>=21.3
@@ -66,14 +64,17 @@ pandas>=1.5.0
 scikit-learn>=1.3.0
 sentencepiece>=0.2.0
 peft>=0.15.2
+cupy_cuda12x>=13.4.1
+onnxruntime-gpu>=1.22.0
+ctranslate2>=4.6.0
 "@ | Set-Content requirements.txt
 
 Write-Host "Upgrading pip version..."
 python -m pip install --upgrade pip
 
 # change if you want a different version
-Write-Host "Installing PyTorch with CUDA 12.6... (this may take a while)"
-pip install torch -i https://download.pytorch.org/whl/cu126
+Write-Host "Installing PyTorch with CUDA 12.8... (this may take a while)"
+pip install torch torchaudio torchvision -i https://download.pytorch.org/whl/cu128
 
 Write-Host "Installing other dependencies... (this may take a while longer!)"
 pip install -r requirements.txt
